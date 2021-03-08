@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,700);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.board__header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0.5rem;
+
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.board__table {
+  padding: 0 0.25rem;
+}
+
+.board__table th {
+  padding: 0.25rem 1rem;
+  text-align: left;
+}
+
+.board__table tr:nth-child(even) {
+  background-color: powderblue;
+}
+
+.board__table td {
+  padding: 0.25rem 1rem;
+}
+
+.board__time, .board__no, .board__track {
+  text-align: right;
+}
+
+.board__status input {
+  display: block;
+  width: 4rem;
+}
+
+.btn-delay {
+  padding: 0.2rem 0.5rem;
+
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 4px gray;
+
+  cursor: pointer;
+}
+
+.btn-delay:hover {
+  transform: scale(1.1);
+}
+
+.btn-delay:active {
+  background-color: lightblue;
+}
